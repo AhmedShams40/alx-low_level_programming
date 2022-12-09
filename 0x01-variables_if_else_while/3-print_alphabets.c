@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
 * main - Lanzador.
@@ -10,14 +9,15 @@
 int main(void)
 {
 	char a = 'a';
+	char b = 'A';
 
 	for (a = 'a'; a <= 'z'; a++)
 	{
 		putchar(a);
 	}
-	for (a = 'a'; a <= 'z'; a++)
+	for (b = 'A'; b <= 'Z'; b++)
 	{
-		putchar(toupper(a));
+		putchar(b);
 	}
 	putchar('\n');
 	return (0);
