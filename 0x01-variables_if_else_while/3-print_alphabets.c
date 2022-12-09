@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(a);
 	}
-    for (a = 'a'; a <= 'z'; a++)
+        for (a = 'a'; a <= 'z'; a++)
 	{
 		putchar(toupper(a));
 	}
