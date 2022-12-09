@@ -15,7 +15,7 @@ int main(void)
 	{
 		printf(" and is greater than 5\n");
 	}
-	else if (last_digit <6 && n! = 0)
+	else if (last_digit <6 && n != 0)
 		printf(" and is less than 6 and not 0\n");
 	else 
 	{
@@ -24,4 +24,3 @@ int main(void)
 	
 	return (0);
 }
-
