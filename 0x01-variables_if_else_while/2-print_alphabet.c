@@ -1,19 +1,15 @@
 #include <stdio.h>
-
 /**
 * main - Lanzador.
 *
 * Return: Always 0.
 */
-
-int main(void)
+int main()
 {
-	char a = 'a';
-
-	for (a = 'a'; a <= 'z'; a++)
-	{
-		putchar(a);
-	}
-	putchar('\n');
-	return (0);
+    for(char x = 'a'; x <= 'z'; x++)
+    {
+    putchar(x);
+    }
+    putchar('\n');
+    return 0;
 }
