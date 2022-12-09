@@ -1,30 +1,29 @@
 #include <stdio.h>
-
 /**
-* main - Print combinations of two digit numbers
+*main - Prints all combinations of two digits with,
+* and space followed by new line
 *
-* Return: Always 0 (Success)
+*Return: returns 0
 */
 int main(void)
 {
-  int tens;
-  int ones;
+	int digit1, digit2;
 
-  for (tens = 0; tens <= 9; tens++)
-    {
-      for (ones = tens + 1; ones <= 9; ones++)
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-	  putchar(tens + '0');
-	  putchar(ones + '0');
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		{
 
-	  if (tens < 8)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+		}
 	}
-    }
-  putchar('\n');
-
-  return (0);
+	putchar('\n');
+	return (0);
 }
