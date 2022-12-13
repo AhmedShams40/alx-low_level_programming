@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - check the code
@@ -8,17 +7,16 @@
  */
 void print_alphabet()
 {
-	char x='a';
+	char x = 'a';
 	for(x = 'a' ; x < 'z' ; x++)
 	{
 		putchar(x);
 	}
-	
+	putchar('\n');
 }
 
 int main(void)
 {
     print_alphabet();
-	putchar('\n');
     return (0);
 }
