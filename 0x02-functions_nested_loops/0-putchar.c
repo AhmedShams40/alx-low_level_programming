@@ -17,4 +17,4 @@ int main(void)
 	}
 	_putchar(10);
 	return (0);
-} 
+}
