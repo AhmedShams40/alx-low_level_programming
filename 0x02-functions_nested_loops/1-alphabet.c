@@ -4,17 +4,17 @@
 *
 * Return: Always 0.
 */
-void print_alphabet(void)
+void print_alphabet (void)
 {
 	char x = 'a';
-	for(x = 'a' ; x < 'z' ; x++)
+	for (x = 'a' ; x < 'z' ; x++)
 	{
-		putchar(x);
+		putchar (x);
 	}
-	putchar('\n');
+	putchar ('\n');
 }
-int main(void)
+int main (void)
 {
-	print_alphabet();
+	print_alphabet ();
 	return (0);
 }
